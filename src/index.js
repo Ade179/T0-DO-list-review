@@ -11,7 +11,7 @@ const clearAll = document.querySelector('.btn');
 
 let itemArray = [] || JSON.parse(localStorage.getItem('items'));
 
-// Edit items
+// Edited items
 const editItems = (oldItem, newy, spano) => {
   const newInput = document.createElement('input');
   newInput.type = 'text';
