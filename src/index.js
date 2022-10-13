@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 import List from './modules/List.js';
 import completeItem from './modules/complete.js';
 /* eslint-disable no-plusplus */
+/* eslint-disable  no-use-before-define */
 const container = document.querySelector('.container');
 const form = document.querySelector('.form');
 const inputtxt = document.querySelector('#inp');
@@ -11,7 +12,7 @@ const clearAll = document.querySelector('.btn');
 
 let itemArray = [] || JSON.parse(localStorage.getItem('items'));
 
-// Edit items
+// Edited items
 const editItems = (oldItem, newy, spano) => {
   const newInput = document.createElement('input');
   newInput.type = 'text';
@@ -178,7 +179,7 @@ const getItemsLocal = () => {
     });
   }
 
-  // Remove items
+  // Remove item
   for (let i = 0; i < trash.length; i += 1) {
     trash[i].addEventListener('click', () => {
       removeItems(each[i]);
