@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 import List from './modules/List.js';
 import completeItem from './modules/complete.js';
 /* eslint-disable no-plusplus */
+/* eslint-disable  no-use-before-define */
 const container = document.querySelector('.container');
 const form = document.querySelector('.form');
 const inputtxt = document.querySelector('#inp');
@@ -72,7 +73,7 @@ const crud = (newDescription) => {
   </span>`;
 
   container.appendChild(newItem);
-  const checkbox = document.querySelectorAll('.checker');
+ const checkbox = document.querySelectorAll('.checker');
   const spanText = document.querySelectorAll('.span');
   const more = document.querySelectorAll('.more');
   const trash = document.querySelectorAll('.trashcan');
@@ -178,7 +179,7 @@ const getItemsLocal = () => {
     });
   }
 
-  // Remove items
+  // Remove item
   for (let i = 0; i < trash.length; i += 1) {
     trash[i].addEventListener('click', () => {
       removeItems(each[i]);
