@@ -73,7 +73,7 @@ const crud = (newDescription) => {
   </span>`;
 
   container.appendChild(newItem);
- const checkbox = document.querySelectorAll('.checker');
+  const checkbox = document.querySelectorAll('.checker');
   const spanText = document.querySelectorAll('.span');
   const more = document.querySelectorAll('.more');
   const trash = document.querySelectorAll('.trashcan');
